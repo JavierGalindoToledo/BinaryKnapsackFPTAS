@@ -4,4 +4,4 @@ A Fully Polynomial Time Approximation Scheme (FPTAS) for the 0/1 knapsack proble
 The basic idea is to scale down the profits to make the dynamic programming table smaller and solve the scaled version of the problem. The steps are:
   1. Let 𝜖 > 0 be the desired approximation factor.
   2. Scale profits: For each item with profit $p_i$, replace $p_i$ with a scaled value $p'_i$ such that
-                                                $p'_i = \frac{p_i}{K}$
+                                                $p'_i = \floor{p_i}{K}$
