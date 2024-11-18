@@ -9,3 +9,5 @@ The basic idea is to scale down the profits to make the dynamic programming tabl
      - $\epsilon$ is desired approximation factor.
      - $P_{\text{max}}$ is the maximum profit among the items.
      - $n$ is the total number of items. This ensures that the scaled profits are integers and the computation remains polynomial.
+  4. Use the dynamic programming approach to solve the knapsack problem with scaled profits $p'_i$. The scaled dynamic programming table has reduced dimensions, leading to faster computation.
+  5. Map the solution of the scaled problem back to the original profits $p_i$. This ensures the approximation is within $(1-\epsilon)$ of the optimal profit.
