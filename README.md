@@ -5,8 +5,7 @@ The basic idea is to scale down the profits to make the dynamic programming tabl
   1. Let 𝜖 > 0 be the desired approximation factor.
   2. Scale profits: For each item with profit $p_i$, replace $p_i$ with a scaled value $p'_i$ such that
                                                 $p'_i = \lfloor\frac{p_i}{K}\rfloor$
-  3. The scaling factor $k$ is determined as: $k = \frac{\epsilon \cdot P_{\text{max}}}{n}$
-     where
+  3. The scaling factor $k$ is determined as: $k = \frac{\epsilon \cdot P_{\text{max}}}{n}$, where:
      - $\epsilon$ is desired approximation factor.
      - $P_{\text{max}}$ is the maximum profit among the items.
      - $n$ is the total number of items. This ensures that the scaled profits are integers and the computation remains polynomial.
